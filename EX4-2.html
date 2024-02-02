@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position:relative;
+            left:0;
+          margin: auto;
+            max-width: 500px;
+            max-height: 300px;
+            padding: 5px;
+            text-align: left;
+            border-width: 2px;
+            border-color: grey;
+            border-style: solid;
+            overflow-y: scroll;
+        }
+        .m-signature-pad--body canvas {
+            position: relative;
+            left: 0;
+            top: 0;
+            width: 200%;
+            height: 100px;
+            border: 1px solid #CCCCCC;
+        }
+        
+        .container {
+            width: 500px;
+            clear: both;
+            margin:auto
+          }
+
+          .container input {
+            width: 100%;
+            clear: both;
+          }
+       
+    
+        tr, td {
+            padding: 10px;
+          }
+        .required::after {
+          content: ' *';
+          color: red;
+        }
+      </style>
+    <h3 style="font-size: 30px; text-align: center;"> Terms and Conditions </h3>
+</head>
+<body>
+    <p style="text-align: center;">Please read our Term and Conditions and sign below.</p>
+    <form class="container" id="form1">
+        <table>
+            <tr>
+                <td>
+                    <label class="required">First Name:</label> <br>
+        <input type="text" id="first" name="first" />
+                </td>
+                <td>
+                    <label class="required">Last Name:</label><br>
+      <input type="text" id="last" name="last" />
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2"> 
+                    <label class="required">Email:</label><br>
+      <input type="text" id="email" name="email" size="50" /> </td>
+            </tr>
+
+        <tr><td colspan="2">
+            <label>Terms and Conditions</label><br>
+        <div class-"container" style="background-color: rgb(219, 217, 217);">
+
+         <p>Last updated: (add date)</p>
+
+          <p> Please read these Terms and Conditions ("Terms", "Terms and Conditions") carefully before using the http://www.mywebsite.com (change this) website and the My Mobile App (change this) mobile application (the "Service") operated by My Company (change this) ("us", "we", or "our").</p> 
+            
+            <p>Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+            </p>
+            <p>By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service.
+            </p>
+           <p> Purchases<br>
+            If you wish to purchase any product or service made available through the Service ("Purchase"), you may be asked to supply certain information relevant to your Purchase including, without limitation, your …
+        </p>
+           
+
+        </div>
+        </td>
+        
+        </tr>
+
+    
+        <tr>
+            <td>
+                <p class="m-signature-pad--body">
+                <label class="required">Please sign here</label> <br>
+        <input type="hidden" id="sign" name="sign" value="" />
+            <canvas id="myCanvas" width="50%" height="100"></canvas>
+            <input type="button" value="Clear Signature Pad" id="Clear Signature Pad"><br>
+
+        </p>  
+        
+            </td>
+           
+        </tr>
+       
+    
+    </table>
+   
+    <br><input  type="submit" value="Submit " id="submit">
+        
+     
+    </form>
+
+      
+   
+
+</body>
+</html>
